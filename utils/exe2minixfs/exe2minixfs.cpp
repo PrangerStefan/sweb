@@ -81,7 +81,7 @@ int main(int argc, char *argv[])
     fclose(src_file);
 
     VfsSyscall::rm(argv[2 * i]);
-    int32 fd = VfsSyscall::open(argv[2 * i], 8 | 4);
+    int32 fd = VfsSyscall::open(argv[2 * i], 2 | 4);
     if (fd < 0)
     {
       printf("no success\n");
